@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --c-bg: #070b16;
+  --c-bg-elev: #0d1326;
+  --c-surface: rgba(255, 255, 255, 0.04);
+  --c-text: #e8edff;
+  --c-text-muted: #9aa7c7;
+  --c-accent: #46e0ff;
+  --c-accent-2: #8a7bff;
+  --c-accent-soft: rgba(70, 224, 255, 0.14);
+  --c-border: rgba(138, 123, 255, 0.22);
+  --c-glow: rgba(70, 224, 255, 0.35);
+}
+
+@theme inline {
+  --color-bg: var(--c-bg);
+  --color-bg-elev: var(--c-bg-elev);
+  --color-surface: var(--c-surface);
+  --color-text: var(--c-text);
+  --color-text-muted: var(--c-text-muted);
+  --color-accent: var(--c-accent);
+  --color-accent-2: var(--c-accent-2);
+  --color-border: var(--c-border);
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+* {
+  /* smooth palette morph */
+  transition:
+    background-color 0.6s ease,
+    border-color 0.6s ease,
+    color 0.6s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
