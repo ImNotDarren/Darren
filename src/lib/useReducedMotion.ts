@@ -12,18 +12,6 @@ export function useReducedMotion(): boolean {
   return reduced;
 }
 
-export function hasWebGL(): boolean {
-  try {
-    const canvas = document.createElement("canvas");
-    return Boolean(
-      window.WebGLRenderingContext &&
-        (canvas.getContext("webgl") || canvas.getContext("experimental-webgl")),
-    );
-  } catch {
-    return false;
-  }
-}
-
 export function useCoarsePointer(): boolean {
   const [coarse, setCoarse] = useState(false);
   useEffect(() => {
