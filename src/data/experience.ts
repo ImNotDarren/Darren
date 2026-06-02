@@ -1,9 +1,12 @@
+export type ExperienceWorld = "research" | "music" | "both";
+
 export interface ExperienceEntry {
   role: string;
   org: string;
   location: string;
   period: string;
   start: number; // sort key, year
+  world: ExperienceWorld;
   points: string[];
 }
 
@@ -14,6 +17,7 @@ export const experience: ExperienceEntry[] = [
     location: "Atlanta, GA",
     period: "Aug 2024 – Present",
     start: 2024,
+    world: "research",
     points: [
       "LLM agents and machine learning for healthcare and nutrition.",
       "Research spanning clinical NLP, multimodal models, and physiological-signal ML.",
@@ -25,6 +29,7 @@ export const experience: ExperienceEntry[] = [
     location: "Irvine, CA",
     period: "May 2025 – Aug 2025",
     start: 2025,
+    world: "research",
     points: [
       "Built and deployed a real-time alarm analytics dashboard into the Nihon Kohden Digital Health Platform.",
       "Built a receiver pulling SQL (Bedmaster) data, converting to NKDHP format, and streaming to Kafka.",
@@ -36,6 +41,7 @@ export const experience: ExperienceEntry[] = [
     location: "Atlanta, GA",
     period: "Mar 2023 – Jun 2024",
     start: 2023,
+    world: "research",
     points: [
       "Built ModelMeetsData and CRCWeb full-stack platforms.",
       "Led LLM evaluation studies on clinical concept tagging and educational content.",
@@ -47,6 +53,7 @@ export const experience: ExperienceEntry[] = [
     location: "Chengdu, China",
     period: "Mar 2020 – Aug 2024",
     start: 2020,
+    world: "music",
     points: [
       "Chorus recording and vocal direction; composing and producing.",
       "Co-produced Yichuan Wang's album \"Stop Daydreaming\"; released albums \"Murderer\" and \"Darren\".",
@@ -58,6 +65,7 @@ export const experience: ExperienceEntry[] = [
     location: "Chongqing, China",
     period: "Jul 2020 – Aug 2020",
     start: 2019,
+    world: "research",
     points: ["Full-stack web development; requirement analysis and database design."],
   },
 ];

@@ -1,34 +1,22 @@
-import { IdentityProvider } from "@/theme/IdentityContext";
-import { Nav } from "@/components/Nav";
-import { ScrollProgress } from "@/components/ScrollProgress";
-import { CursorGlow } from "@/components/CursorGlow";
-import { Hero } from "@/components/Hero";
-import { About } from "@/components/sections/About";
-import { Research } from "@/components/sections/Research";
-import { Publications } from "@/components/sections/Publications";
-import { Projects } from "@/components/sections/Projects";
-import { Music } from "@/components/sections/Music";
-import { Experience } from "@/components/sections/Experience";
-import { Skills } from "@/components/sections/Skills";
-import { Contact } from "@/components/sections/Contact";
+import { Routes, Route } from "react-router-dom";
+import { WipeProvider } from "@/components/WipeTransition";
+import { useLenis } from "@/lib/useLenis";
+import { useReducedMotion } from "@/lib/useReducedMotion";
+import { Landing } from "@/routes/Landing";
+import { ResearchWorld } from "@/routes/ResearchWorld";
+import { MusicWorld } from "@/routes/MusicWorld";
 
 export default function App() {
+  const reduced = useReducedMotion();
+  useLenis(!reduced);
   return (
-    <IdentityProvider>
-      <ScrollProgress />
-      <CursorGlow />
-      <Nav />
-      <main>
-        <Hero />
-        <About />
-        <Research />
-        <Publications />
-        <Projects />
-        <Music />
-        <Experience />
-        <Skills />
-        <Contact />
-      </main>
-    </IdentityProvider>
+    <WipeProvider>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/research" element={<ResearchWorld />} />
+        <Route path="/music" element={<MusicWorld />} />
+        <Route path="*" element={<Landing />} />
+      </Routes>
+    </WipeProvider>
   );
 }

@@ -8,16 +8,37 @@ export interface ContactLink {
   href: string;
 }
 
+export interface Stat {
+  value: number;
+  suffix: string;
+  label: string;
+}
+
 export const profile = {
   name: "Darren (Sizuo) Liu",
   location: "Atlanta, GA",
   taglines: {
-    researcher: "PhD researcher in Biomedical Informatics, building AI for health.",
-    musician: "Singer-songwriter & music producer.",
-    blended: "Biomedical Informatics PhD researcher & music producer.",
+    research: "PhD researcher in Biomedical Informatics, building AI for health.",
+    music: "Singer-songwriter & music producer.",
   },
-  about:
-    "I am a PhD student in Computer Science and Informatics at Emory University on the Biomedical Informatics track, where I build LLM agents and machine-learning systems for healthcare and nutrition. Outside the lab I write, record, and produce music, and have released several albums as Darren Liu. I move between data and sound, and I like building things that reach real people in both worlds.",
+  about: {
+    research:
+      "I am a PhD student in Computer Science and Informatics at Emory University on the Biomedical Informatics track. I build LLM agents and machine-learning systems for healthcare and nutrition, spanning clinical NLP, multimodal models, and physiological-signal analysis. I like turning messy clinical data into tools that reach real patients and clinicians.",
+    music:
+      "I write, record, and produce music as Darren Liu, with several albums and singles released across streaming platforms. As a recording engineer and producer at Silence Music in Chengdu I directed vocals, composed, and co-produced other artists. Sound is the other half of how I think.",
+  },
+  stats: {
+    research: [
+      { value: 12, suffix: "", label: "Publications" },
+      { value: 4, suffix: "", label: "Research themes" },
+      { value: 2028, suffix: "", label: "PhD expected" },
+    ] as Stat[],
+    music: [
+      { value: 9, suffix: "", label: "Releases" },
+      { value: 2, suffix: "", label: "Albums" },
+      { value: 5, suffix: "+", label: "Years producing" },
+    ] as Stat[],
+  },
   contacts: [
     { label: "Email", href: "mailto:darren.liu@emory.edu" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/darren-sizuo-liu/" },

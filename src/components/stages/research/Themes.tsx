@@ -1,5 +1,5 @@
+import { motion } from "framer-motion";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Reveal } from "@/components/reveal/Reveal";
 import { TiltCard } from "@/components/ui/TiltCard";
 
 const THEMES = [
@@ -9,25 +9,28 @@ const THEMES = [
   { title: "Physiological-Signal ML", body: "Time-series and alarm analytics for real-time critical-care monitoring." },
 ];
 
-export function Research() {
+export function Themes() {
   return (
-    <section id="research" className="mx-auto max-w-6xl px-6 py-28">
+    <section id="research" className="mx-auto max-w-6xl px-6 py-32">
       <SectionTitle eyebrow="Research" title="What I work on" />
       <div className="grid gap-6 sm:grid-cols-2">
         {THEMES.map((t, i) => (
-          <Reveal key={t.title} delay={i * 0.08}>
+          <motion.div
+            key={t.title}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, delay: i * 0.08 }}
+          >
             <TiltCard className="h-full">
-              <div
-                className="h-full rounded-2xl p-6"
-                style={{ backgroundColor: "var(--c-surface)", border: "1px solid var(--c-border)" }}
-              >
-                <h3 className="mb-2 text-xl font-semibold" style={{ fontFamily: "var(--font-display)" }}>
+              <div className="h-full rounded-3xl p-8" style={{ backgroundColor: "var(--bg-soft)", border: "1px solid var(--line)" }}>
+                <h3 className="mb-2 text-2xl font-semibold" style={{ fontFamily: "var(--font-display)" }}>
                   {t.title}
                 </h3>
-                <p style={{ color: "var(--c-text-muted)" }}>{t.body}</p>
+                <p style={{ color: "var(--ink-muted)" }}>{t.body}</p>
               </div>
             </TiltCard>
-          </Reveal>
+          </motion.div>
         ))}
       </div>
     </section>

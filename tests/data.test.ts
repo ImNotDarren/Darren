@@ -49,4 +49,19 @@ describe("data integrity", () => {
     expect(profile.contacts.length).toBeGreaterThan(0);
     for (const c of profile.contacts) expect(c.href).toMatch(urlRe);
   });
+
+  it("experience entries are world-tagged", () => {
+    for (const e of experience) {
+      expect(["research", "music", "both"]).toContain(e.world);
+    }
+    expect(experience.some((e) => e.world === "music")).toBe(true);
+    expect(experience.some((e) => e.world === "research")).toBe(true);
+  });
+
+  it("profile has per-world about and stats", () => {
+    expect(profile.about.research).toMatch(/.+/);
+    expect(profile.about.music).toMatch(/.+/);
+    expect(profile.stats.research.length).toBe(3);
+    expect(profile.stats.music.length).toBe(3);
+  });
 });
