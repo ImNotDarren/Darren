@@ -15,7 +15,7 @@ export interface Stat {
 }
 
 export const profile = {
-  name: "Darren (Sizuo) Liu",
+  name: "Darren Liu",
   location: "Atlanta, GA",
   taglines: {
     research: "PhD researcher in Biomedical Informatics, building AI for health.",

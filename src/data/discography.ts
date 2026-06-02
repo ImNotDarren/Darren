@@ -6,12 +6,36 @@ export interface Release {
   type: ReleaseType;
   artworkUrl: string;
   url: string;
+  /** Marks a not-yet-released title so it can be highlighted in the carousel. */
+  upcoming?: boolean;
 }
 
 const ARTIST_URL = "https://music.apple.com/us/artist/darren-liu/1581649003";
 
+/**
+ * The next single, surfaced as a hero on the music world. Release date is the
+ * source of truth for the countdown in <UpcomingSingle />.
+ */
+export const upcomingSingle = {
+  title: "Immature",
+  artworkUrl: "/album-art/immature.png",
+  /** Local midnight on release day. Drives the live countdown. */
+  releaseDate: new Date(2026, 6, 1, 0, 0, 0),
+  releaseLabel: "July 1, 2026",
+  credit: "Written, produced & performed by Darren Liu",
+  url: ARTIST_URL,
+} as const;
+
 export const discography: Release[] = [
-  { title: "Darren", year: 2024, type: "album", artworkUrl: "/album-art/darren.jpg", url: ARTIST_URL },
+  {
+    title: upcomingSingle.title,
+    year: 2026,
+    type: "single",
+    artworkUrl: upcomingSingle.artworkUrl,
+    url: upcomingSingle.url,
+    upcoming: true,
+  },
+  { title: "DARREN", year: 2024, type: "album", artworkUrl: "/album-art/darren.jpg", url: ARTIST_URL },
   { title: "Murderer (US Version)", year: 2021, type: "album", artworkUrl: "/album-art/murderer.jpg", url: ARTIST_URL },
   { title: "Playboy (Deluxe Version) - EP", year: 2021, type: "ep", artworkUrl: "/album-art/playboy.jpg", url: ARTIST_URL },
   { title: "3am", year: 2025, type: "single", artworkUrl: "/album-art/3am.jpg", url: ARTIST_URL },

@@ -1,0 +1,505 @@
+{
+  "_comment": "EDIT ME. Source of truth for Darren Liu music data. Adjust `writers`/`producers`/`vocals` per track. Track metadata (titles, durations, features, links, previews) is fetched from Apple Music. Re-run `node scripts/fetch-music.mjs` to refresh Apple metadata; your credits are merged and preserved.",
+  "artist": "Darren Liu",
+  "appleMusicArtistUrl": "https://music.apple.com/us/artist/darren-liu/1581649003",
+  "releases": [
+    {
+      "id": "darren",
+      "title": "DARREN",
+      "type": "album",
+      "releaseDate": "2024-07-01",
+      "year": 2024,
+      "genre": "Pop",
+      "artworkUrl": "/album-art/darren.jpg",
+      "appleMusicUrl": "https://music.apple.com/us/album/1806672503",
+      "tracks": [
+        {
+          "number": 1,
+          "title": "Playboy",
+          "duration": "3:18",
+          "features": [],
+          "writers": [
+            "Darren Liu",
+            "Jacob Ditkoff",
+            "YC Wang"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672504",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/60/91/e5/6091e52b-4fcf-ae2c-c39d-7a1ec352f8e6/mzaf_15020161156451837033.plus.aac.p.m4a"
+        },
+        {
+          "number": 2,
+          "title": "Dream",
+          "duration": "3:23",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672505",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/9d/26/dc9d267f-ab3a-432d-bf85-f6affdd1121a/mzaf_4944628483552773350.plus.aac.p.m4a"
+        },
+        {
+          "number": 3,
+          "title": "22",
+          "duration": "3:35",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672506",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/bc/6b/adbc6bd1-73ca-04b1-e060-d80cd6e2d03c/mzaf_924335304974445667.plus.aac.p.m4a"
+        },
+        {
+          "number": 4,
+          "title": "Call Me Back",
+          "duration": "2:48",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672507",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c2/5d/42/c25d42b5-ccc5-41ee-0a93-acf188acfc65/mzaf_10651007899747562527.plus.aac.p.m4a"
+        },
+        {
+          "number": 5,
+          "title": "No Idea",
+          "duration": "2:25",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672508",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/05/b9/4e05b99d-0256-5f72-5070-a6e14c422750/mzaf_16869256493201486321.plus.aac.p.m4a"
+        },
+        {
+          "number": 6,
+          "title": "Hello",
+          "duration": "3:16",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672509",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/15/f0/6015f09f-3bc5-9294-052f-a874a2784a08/mzaf_9654599827601337568.plus.aac.p.m4a"
+        },
+        {
+          "number": 7,
+          "title": "Moments",
+          "duration": "3:34",
+          "features": [
+            "Yi Liu"
+          ],
+          "writers": [
+            "Darren Liu", "Yufan Yang"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu",
+            "Yi Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672510",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/cb/6b/96cb6ba4-74ee-6da9-f746-6d5287e6a8e8/mzaf_8465013869958034585.plus.aac.p.m4a"
+        },
+        {
+          "number": 8,
+          "title": "Whispers of Return",
+          "duration": "4:53",
+          "features": [],
+          "writers": [
+            "Darren Liu", "Tao Li"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672511",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/36/db/0136db8b-3544-0eb5-f758-27cfc8b406f8/mzaf_2776739264720927066.plus.aac.p.m4a"
+        },
+        {
+          "number": 9,
+          "title": "Telepath",
+          "duration": "3:39",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672513",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/c9/3d/fec93d21-c1cb-3b9a-de50-2128886fed08/mzaf_16439267715306824876.plus.aac.p.m4a"
+        },
+        {
+          "number": 10,
+          "title": "We'll",
+          "duration": "3:41",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672514",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3f/6e/10/3f6e10bd-d64c-f032-2087-106102e65406/mzaf_13923298382446035.plus.aac.p.m4a"
+        },
+        {
+          "number": 11,
+          "title": "The End",
+          "duration": "4:02",
+          "features": [],
+          "writers": [
+            "Darren Liu", "Yucen Xie"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806672503?i=1806672515",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/64/7e/33647e20-333e-cda6-e50f-87bcc433bc13/mzaf_1157915936797475599.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "murderer",
+      "title": "Murderer",
+      "type": "album",
+      "releaseDate": "2021-11-20",
+      "year": 2021,
+      "genre": "Pop",
+      "artworkUrl": "/album-art/murderer.jpg",
+      "appleMusicUrl": "https://music.apple.com/us/album/1596542141",
+      "tracks": [
+        {
+          "number": 1,
+          "title": "Depression.",
+          "duration": "6:29",
+          "features": [
+            "YC Wang"
+          ],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu", "YC Wang"
+          ],
+          "vocals": [
+            "Darren Liu",
+            "YC Wang"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542142",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/07/f8/3d/07f83d51-a314-bb3f-d67e-0acb52f89180/mzaf_17638442618664703870.plus.aac.p.m4a"
+        },
+        {
+          "number": 2,
+          "title": "All My Fault",
+          "duration": "3:52",
+          "features": [
+          ],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542143",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/99/c6/de/99c6de83-de1d-c58d-05aa-59cd64497301/mzaf_4661501494689027244.plus.aac.p.m4a"
+        },
+        {
+          "number": 3,
+          "title": "Wedding",
+          "duration": "4:20",
+          "features": [
+          ],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542144",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/c4/57/b8/c457b846-17b2-0ac7-b3d6-e58f56309f27/mzaf_897178755375443422.plus.aac.p.m4a"
+        },
+        {
+          "number": 4,
+          "title": "Huh!",
+          "duration": "3:40",
+          "features": [
+          ],
+          "writers": [
+            "Darren Liu", "Joy Wang"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542145",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/dd/84/70/dd8470ad-0173-efb6-7eaa-c7705059c3fc/mzaf_16099291561679300057.plus.aac.p.m4a"
+        },
+        {
+          "number": 5,
+          "title": "After All We've Been Through",
+          "duration": "3:59",
+          "features": [
+          ],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542146",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/c1/44/f0/c144f0fd-924b-2396-22f4-8183347248e2/mzaf_15962507486889378120.plus.aac.p.m4a"
+        },
+        {
+          "number": 6,
+          "title": "Murderer",
+          "duration": "3:35",
+          "features": [
+          ],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542147",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/cf/44/f2/cf44f2fa-e4a8-92e0-7c04-8ef3084c18e8/mzaf_5533330333692503267.plus.aac.p.m4a"
+        },
+        {
+          "number": 7,
+          "title": "I Know",
+          "duration": "3:35",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542148",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/4a/10/16/4a101670-dddc-0a7f-68f4-0434961542d2/mzaf_881084270364669795.plus.aac.p.m4a"
+        },
+        {
+          "number": 8,
+          "title": "It's Never the End",
+          "duration": "5:35",
+          "features": [
+            "Bonnie Chang"
+          ],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu",
+            "Bonnie Chang"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542149",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e5/6a/96/e56a9617-732f-be36-0e93-4abc94be0c4f/mzaf_10465884822916396916.plus.aac.p.m4a"
+        },
+        {
+          "number": 9,
+          "title": "About Us (Chinese Version)",
+          "duration": "4:19",
+          "features": [
+          ],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542150",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/4e/2b/0b/4e2b0bb6-0fee-d52f-9e3c-7f2a5d6bedcd/mzaf_15190876320230008060.plus.aac.p.m4a"
+        },
+        {
+          "number": 10,
+          "title": "About Us",
+          "duration": "4:07",
+          "features": [
+          ],
+          "writers": [
+            "Darren Liu", "Joy Wang"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542151",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b4/70/16/b4701631-2527-a849-7fce-7eaa93c26f5d/mzaf_5686439428792278538.plus.aac.p.m4a"
+        },
+        {
+          "number": 11,
+          "title": "Original Song",
+          "duration": "3:33",
+          "features": [
+            "YC Wang"
+          ],
+          "writers": [
+            "Darren Liu", "YC Wang", "Many Others"
+          ],
+          "producers": [
+            "Darren Liu",
+            "YC Wang"
+          ],
+          "vocals": [
+            "Darren Liu",
+            "YC Wang"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542152",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b8/fc/5c/b8fc5c0f-c37b-7a86-dd0b-bb15b2d757ea/mzaf_13740918455216263041.plus.aac.p.m4a"
+        },
+        {
+          "number": 12,
+          "title": "Parallel World",
+          "duration": "3:37",
+          "features": [
+            "YC Wang"
+          ],
+          "writers": [
+            "Yucen Xie", "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu", "YC Wang"
+          ],
+          "vocals": [
+            "Darren Liu",
+            "YC Wang"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1596542141?i=1596542153",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/34/1e/71/341e71cc-169a-0576-e443-c8570ece4da3/mzaf_6510083182548261588.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "3am",
+      "title": "3AM",
+      "type": "single",
+      "releaseDate": "2025-04-03",
+      "year": 2025,
+      "genre": "Mandopop",
+      "artworkUrl": "/album-art/3am.jpg",
+      "appleMusicUrl": "https://music.apple.com/us/album/1806402046",
+      "tracks": [
+        {
+          "number": 1,
+          "title": "3AM",
+          "duration": "4:32",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1806402046?i=1806402047",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/97/bf/76/97bf76c6-e9f5-bb6b-0aa1-ae925d28f1c5/mzaf_13182123909672323837.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "bystander",
+      "title": "Bystander",
+      "type": "single",
+      "releaseDate": "2024-07-31",
+      "year": 2024,
+      "genre": "Mandopop",
+      "artworkUrl": "/album-art/bystander.jpg",
+      "appleMusicUrl": "https://music.apple.com/us/album/1807334962",
+      "tracks": [
+        {
+          "number": 1,
+          "title": "Bystander",
+          "duration": "5:28",
+          "features": [],
+          "writers": [
+            "Darren Liu"
+          ],
+          "producers": [
+            "Darren Liu"
+          ],
+          "vocals": [
+            "Darren Liu"
+          ],
+          "appleMusicUrl": "https://music.apple.com/us/album/1807334962?i=1807334963",
+          "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/32/92/f7329216-01c9-6607-1b37-383de1066de5/mzaf_5251670419183072398.plus.aac.p.m4a"
+        }
+      ]
+    }
+  ]
+}

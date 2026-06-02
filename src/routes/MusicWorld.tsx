@@ -4,8 +4,10 @@ import { WorldNav } from "@/components/WorldNav";
 import { PortalCTA } from "@/components/ui/PortalCTA";
 import { profile } from "@/data/profile";
 import { Intro } from "@/components/stages/music/Intro";
+import { UpcomingSingle } from "@/components/stages/music/UpcomingSingle";
 import { AboutMusic } from "@/components/stages/music/AboutMusic";
 import { Discography } from "@/components/stages/music/Discography";
+import { Tracklists } from "@/components/stages/music/Tracklists";
 import { Production } from "@/components/stages/music/Production";
 import { Featured } from "@/components/stages/music/Featured";
 import { ExperienceMusic } from "@/components/stages/music/ExperienceMusic";
@@ -19,8 +21,10 @@ export function MusicWorld() {
       <WorldNav current="music" />
       <main>
         <Intro />
+        <UpcomingSingle />
         <AboutMusic />
         <Discography />
+        <Tracklists />
         <Production />
         <Featured />
         <ExperienceMusic />

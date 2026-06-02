@@ -1,5 +1,4 @@
 import { motion, useMotionValue, useTransform, type MotionValue } from "framer-motion";
-import { PinnedStage } from "@/components/PinnedStage";
 import { DataNodes } from "@/components/motifs/DataNodes";
 import { profile } from "@/data/profile";
 import { WORLDS } from "@/theme/worlds";
@@ -30,5 +29,9 @@ function Inner({ progress }: { progress: MotionValue<number> | null }) {
 }
 
 export function Intro() {
-  return <PinnedStage id="intro" length={2}>{(p) => <Inner progress={p} />}</PinnedStage>;
+  return (
+    <section id="intro" className="relative h-screen">
+      <Inner progress={null} />
+    </section>
+  );
 }

@@ -34,6 +34,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Anything interactive gets the pointer cursor. */
+button:not(:disabled),
+a[href],
+[role="button"],
+summary,
+label[for],
+select {
+  cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled="true"] {
+  cursor: default;
+}
+
 /* Lenis smooth-scroll baseline */
 html.lenis,
 html.lenis body {

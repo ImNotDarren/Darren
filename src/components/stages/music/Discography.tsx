@@ -13,7 +13,7 @@ export function Discography() {
       <DragTrack className="px-6">
         {sorted.map((r) => (
           <a key={r.title} href={r.url} target="_blank" rel="noopener noreferrer" className="group w-64 shrink-0">
-            <div className="overflow-hidden rounded-2xl shadow-lg" style={{ border: "1px solid var(--line)" }}>
+            <div className="relative overflow-hidden rounded-2xl shadow-lg" style={{ border: "1px solid var(--line)" }}>
               <img
                 src={r.artworkUrl}
                 alt={r.title}
@@ -21,9 +21,19 @@ export function Discography() {
                 draggable={false}
                 className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
+              {r.upcoming && (
+                <span
+                  className="absolute left-3 top-3 rounded-full px-3 py-1 text-[0.65rem] font-bold uppercase tracking-[0.15em]"
+                  style={{ background: "var(--accent)", color: "#fff" }}
+                >
+                  Coming Soon
+                </span>
+              )}
             </div>
             <p className="mt-3 font-semibold">{r.title}</p>
-            <p className="text-xs uppercase tracking-wide" style={{ color: "var(--ink-muted)" }}>{r.type} · {r.year}</p>
+            <p className="text-xs uppercase tracking-wide" style={{ color: "var(--ink-muted)" }}>
+              {r.upcoming ? "Single · July 1, 2026" : `${r.type} · ${r.year}`}
+            </p>
           </a>
         ))}
       </DragTrack>

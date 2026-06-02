@@ -1,5 +1,4 @@
-import { useRef, type ReactNode } from "react";
-import { motion } from "framer-motion";
+import { type ReactNode } from "react";
 
 interface DragTrackProps {
   children: ReactNode;
@@ -7,12 +6,9 @@ interface DragTrackProps {
 }
 
 export function DragTrack({ children, className }: DragTrackProps) {
-  const constraints = useRef<HTMLDivElement>(null);
   return (
-    <div ref={constraints} className={`overflow-hidden ${className ?? ""}`}>
-      <motion.div drag="x" dragConstraints={constraints} dragElastic={0.08} className="flex cursor-grab gap-6 active:cursor-grabbing">
-        {children}
-      </motion.div>
+    <div className={`overflow-x-auto overscroll-x-contain ${className ?? ""}`}>
+      <div className="flex gap-6">{children}</div>
     </div>
   );
 }

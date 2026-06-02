@@ -5,7 +5,7 @@ import Lenis from "lenis";
 export function useLenis(enabled: boolean): void {
   useEffect(() => {
     if (!enabled) return;
-    const lenis = new Lenis({ duration: 1.1, smoothWheel: true });
+    const lenis = new Lenis({ lerp: 0.12, wheelMultiplier: 1, smoothWheel: true });
     let raf = 0;
     const loop = (time: number) => {
       lenis.raf(time);
