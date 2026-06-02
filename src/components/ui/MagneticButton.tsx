@@ -1,14 +1,14 @@
 import { useRef, type ReactNode } from "react";
-import { motion } from "framer-motion";
 import { useCoarsePointer } from "@/lib/useReducedMotion";
 
 interface MagneticButtonProps {
   children: ReactNode;
-  href: string;
+  href?: string;
+  onClick?: () => void;
   primary?: boolean;
 }
 
-export function MagneticButton({ children, href, primary }: MagneticButtonProps) {
+export function MagneticButton({ children, href, onClick, primary }: MagneticButtonProps) {
   const ref = useRef<HTMLAnchorElement>(null);
   const coarse = useCoarsePointer();
 
@@ -24,20 +24,20 @@ export function MagneticButton({ children, href, primary }: MagneticButtonProps)
   }
 
   return (
-    <motion.a
+    <a
       ref={ref}
       href={href}
+      onClick={onClick}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
-      className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold"
+      className="inline-flex cursor-pointer items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-transform"
       style={{
-        backgroundColor: primary ? "var(--c-accent)" : "transparent",
-        color: primary ? "var(--c-bg)" : "var(--c-text)",
-        border: primary ? "none" : "1px solid var(--c-border)",
-        transition: "transform 0.2s ease",
+        backgroundColor: primary ? "var(--accent)" : "transparent",
+        color: primary ? "#fff" : "var(--ink)",
+        border: primary ? "none" : "1px solid var(--line)",
       }}
     >
       {children}
-    </motion.a>
+    </a>
   );
 }

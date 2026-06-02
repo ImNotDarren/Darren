@@ -6,16 +6,10 @@ interface SectionTitleProps {
 export function SectionTitle({ eyebrow, title }: SectionTitleProps) {
   return (
     <header className="mb-10">
-      <p
-        className="mb-2 text-sm font-medium uppercase tracking-[0.25em]"
-        style={{ color: "var(--c-accent)" }}
-      >
+      <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em]" style={{ color: "var(--accent)" }}>
         {eyebrow}
       </p>
-      <h2
-        className="text-3xl font-bold sm:text-4xl"
-        style={{ fontFamily: "var(--font-display)", color: "var(--c-text)" }}
-      >
+      <h2 className="text-4xl font-bold sm:text-5xl" style={{ fontFamily: "var(--font-display)", color: "var(--ink)" }}>
         {title}
       </h2>
     </header>
